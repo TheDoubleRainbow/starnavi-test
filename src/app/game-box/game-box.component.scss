@@ -1,0 +1,10 @@
+.game-box {
+  width: 32px;
+  height: 32px;
+  border: 1px solid lightgray;
+
+  @media screen and (max-width: 1024px) {
+    width: 20px;
+    height: 20px;
+  }
+}

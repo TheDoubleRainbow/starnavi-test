@@ -1,0 +1,8 @@
+<div *ngIf="gameState === 0" class="game-field-placeholder">
+  <div class="placeholder-text">Game field will appear here :)</div>
+</div>
+<div *ngIf="gameState != 0" class="game-field">
+  <div class="line" *ngFor="let line of grid">
+    <app-game-box (click) = "boxClicked(box)" *ngFor="let box of line" [state] = "box.state" ></app-game-box>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<form [formGroup]="gameSettingsForm" (submit) = "formSubmit()" class="game-settings-form">
+  <div class="select form-item">
+    <select formControlName="gameMode">
+      <option value="easyMode">Easy</option>
+      <option value="normalMode">Normal</option>
+      <option value="hardMode">Hard</option>
+    </select>
+  </div>
+  <input formControlName="name" class="input form-item" type="text" placeholder="Enter your name" />
+  <button [disabled] = "gameState === 1" class="button form-item">{{gameState != 2 ? 'Play' : 'Play again'}}</button>
+</form>

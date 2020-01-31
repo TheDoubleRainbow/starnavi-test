@@ -1,0 +1,6 @@
+<div class="leaderboard">
+  <h2 class="title">Leaderboard</h2>
+  <ol class="leaders">
+    <li class="leader" *ngFor="let leader of leaders"><span class="username">{{leader.winner}}</span> <span class="date">{{leader.date.split(';')[1]}} at {{leader.date.split(';')[0]}}</span></li>
+  </ol>
+</div>

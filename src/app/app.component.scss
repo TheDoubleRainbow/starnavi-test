@@ -1,0 +1,46 @@
+
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  width: 1024px;
+  display: flex;
+  padding: 0;
+}
+
+.main, .leaderboard {
+  text-align: center;
+  padding: 20px;
+}
+
+.main {
+  width: 60%;
+  border-right: 3px solid whitesmoke;
+}
+
+.leaderboard {
+  width: 35%;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    width: 100%;
+    border-right: 3px solid whitesmoke;
+  }
+  
+  .leaderboard {
+    width: 100%;
+  }
+  .box {
+    width: 1024px;
+    display: block;
+    padding: 0;
+  }
+  .game {
+    align-items: flex-start;
+  }
+}
